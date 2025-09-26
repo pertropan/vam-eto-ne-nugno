@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Undertale</title>
+<!-- Подключение шрифта Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    color: #333;
+  }
+
+  /* Стиль для кнопки */
+  .deltarune-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(45deg, #ff8c00, #ffa500);
+    color: #fff;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  .deltarune-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Название */
+  h1 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    color: #ff7f50;
+    margin-top: 60px;
+    letter-spacing: 2px;
+  }
+
+  /* Обертка для изображения и персонажей */
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Блок персонажей слева и справа */
+  .character-block {
+    width: 150px;
+    text-align: center;
+  }
+
+  .character-block img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .character-block img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Центральное изображение */
+  .center-image {
+    max-width: 600px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+
+  /* Разделы */
+  .section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .section h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    color: #ff7f50;
+    border-bottom: 2px solid #ff7f50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+
+  /* Адаптивность для мобильных устройств */
+  @media(max-width: 700px) {
+    h1 {
+      font-size: 36px;
+    }
+    .section h2 {
+      font-size: 20px;
+    }
+    .deltarune-button {
+      padding: 12px 24px;
+      font-size: 12px;
+    }
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .character-block {
+      width: 80%;
+    }
+    .character-block img {
+      width: 80%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Кнопка слева сверху -->
+<a href="deltarune.html" class="deltarune-button">Deltarune</a>
+
+<!-- Название -->
+<h1>Undertale</h1>
+
+<!-- Блок с персонажами и центральной картинкой -->
+<div class="main-content">
+  <!-- Персонаж слева -->
+  <div class="character-block">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Human_Skeleton.png" alt="Chara" title="Chara" />
+    <div>Чара</div>
+  </div>
+
+  <!-- Центрированное изображение -->
+  <img src="https://avatars.mds.yandex.net/i?id=f54170bd4031e5369e8ab831015c27d622181fff-4600825-images-thumbs&n=13" alt="Undertale" class="center-image"/>
+
+  <!-- Персонаж справа -->
+  <div class="character-block">
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Sans.png" alt="Sans" title="Sans" />
+    <div>Санс</div>
+  </div>
+</div>
+
+<!-- Разделы -->
+<div class="section" id="description">
+  <h2>Описание игры</h2>
+  <p>
+    Undertale — это уникальная ролевая игра, созданная Тоби Фоксом. В ней игроки погружаются в мир подземелья, населённого монстрами и фантастическими существами. В отличие от традиционных RPG, игроки могут выбрать путь мира или конфликта, влияя на развитие сюжета и финал. Игра славится своим оригинальным юмором, запоминающимися персонажами и уникальной механикой взаимодействия с врагами. Визуальный стиль — пиксель-арт, а саундтрек сочетает в себе мелодии, вызывающие эмоции и погружающие в атмосферу.
+  </p>
+</div>
+
+<div class="section" id="gameplay">
+  <h2>Геймплей</h2>
+  <p>
+    Геймплей Undertale сочетает элементы классической RPG с инновационной системой боя. В боях игрок может выбрать «сделать шаг назад» и пообщаться с врагом, используя диалоги и действия, чтобы избегать конфликта или даже дружелюбно взаимодействовать. В отличие от большинства игр, здесь можно пройти игру, избегая убийств, что влияет на развитие сюжета и финальную концовку. В игре присутствуют мини-игры, головоломки и квесты, а также возможность исследовать разные области, собирая предметы и взаимодействуя с персонажами.
+  </p>
+</div>
+
+<div class="section" id="soundtracks">
+  <h2>Саундтреки</h2>
+  <p>
+    Саундтрек Undertale — одна из отличительных черт игры. Мелодии выполнены в стиле чиптюн и создают уникальную атмосферу, усиливающую эмоциональные моменты. Некоторые композиции, такие как "Megalovania" и "Hopes and Dreams", приобрели культовый статус среди фанатов. Музыка помогает погрузиться в сюжет, подчеркнуть характер персонажей и усилить ощущение приключения. Саундтрек был создан Тоби Фоксом и стал одним из самых запоминающихся элементов игры.
+  </p>
+</div>
+
+</body>
+</html>
