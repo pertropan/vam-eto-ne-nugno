@@ -7,154 +7,158 @@
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
 <style>
   body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #B0E0E6; /* светлый голубой фон */
-    color: #333;
-    position: relative;
-  }
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #B0E0E6; /* светлый голубой фон */
+  color: #333;
+  position: relative;
+}
 
-  /* Стиль для кнопки или ссылок */
-  .back-link {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background: linear-gradient(45deg, #00bfff, #1e90ff);
-    color: #fff;
-    padding: 14px 28px;
-    text-decoration: none;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 14px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-    z-index: 10;
-  }
+/* Стиль для кнопки или ссылок */
+.back-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(45deg, #00bfff, #1e90ff);
+  color: #fff;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
 
-  .back-link:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-  }
+.back-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
 
-  /* Название */
+/* Название */
+h1 {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 48px;
+  margin-top: 60px;
+  letter-spacing: 2px;
+  /* Цвет установлен в общем стиле ниже */
+}
+
+h1, .section h2 {
+  color: #0000FF; /* синий цвет для всех заголовков */
+}
+
+/* Обертка для изображений и контента */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+/* Блок изображений персонажей */
+.character-block {
+  width: 150px;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Изображения персонажей */
+.character-image {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Эффект при наведении на изображение персонажа */
+.character-image:hover {
+  transform: scale(1.05);
+}
+
+/* Центральное изображение */
+.center-image {
+  max-width: 600px;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Эффект при наведении на центральное изображение */
+.center-image:hover {
+  transform: scale(1.05);
+}
+
+/* Раздел с контентом */
+.section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Заголовки разделов */
+.section h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
+  border-bottom: 2px solid #FF6347;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  /* Цвет установлен в общем стиле выше */
+}
+
+/* Текст внутри разделов */
+.section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+/* Картинки внутри раздела о геймплее и особенностях */
+.gameplay-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Стиль для изображений о Deltarune */
+.deltarune-image {
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 80%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Адаптивность для мобильных устройств */
+@media(max-width: 700px) {
   h1 {
-    text-align: center;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 48px;
-    color: #0000FF; /* оранжево-красный */
-    margin-top: 60px;
-    letter-spacing: 2px;
+    font-size: 36px;
   }
-
-  /* Обертка для изображений и контента */
-  .main-content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 50px 20px;
-    flex-wrap: wrap;
-  }
-
-  /* Блок изображений персонажей */
-  .character-block {
-    width: 150px;
-    text-align: center;
-    margin: 10px;
-  }
-
-  /* Изображения персонажей */
-  .character-image {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-  }
-
-  /* Эффект при наведении на изображение персонажа */
-  .character-image:hover {
-    transform: scale(1.05);
-  }
-
-  /* Центральное изображение */
-  .center-image {
-    max-width: 600px;
-    width: 80%;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    margin: 20px;
-    transition: transform 0.3s ease;
-  }
-
-  /* Эффект при наведении на центральное изображение */
-  .center-image:hover {
-    transform: scale(1.05);
-  }
-
-  /* Раздел с контентом */
-  .section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 20px;
-  }
-
-  /* Заголовки разделов */
   .section h2 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 24px;
-    color: #0000FF;
-    border-bottom: 2px solid #FF6347;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    font-size: 20px;
   }
-
-  /* Текст внутри разделов */
-  .section p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-top: 15px;
+  .back-link {
+    padding: 12px 24px;
+    font-size: 12px;
   }
-
-  /* Картинки внутри раздела о геймплее и особенностях */
-  .gameplay-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  .main-content {
+    flex-direction: column;
+    align-items: center;
   }
-
-  /* Стиль для изображений о Deltarune */
-  .deltarune-image {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  .character-block {
+    width: 80%;
   }
-
-  /* Адаптивность для мобильных устройств */
-  @media(max-width: 700px) {
-    h1 {
-      font-size: 36px;
-    }
-    .section h2 {
-      font-size: 20px;
-    }
-    .back-link {
-      padding: 12px 24px;
-      font-size: 12px;
-    }
-    .main-content {
-      flex-direction: column;
-      align-items: center;
-    }
-    .character-block {
-      width: 80%;
-    }
-  }
+}
 </style>
 </head>
 <body>
@@ -198,4 +202,5 @@
 
 </body>
 </html>
+
 
