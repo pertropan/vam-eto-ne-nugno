@@ -55,13 +55,14 @@
     flex-wrap: wrap;
   }
 
-  /* Блок изображений */
+  /* Блок изображений персонажей */
   .character-block {
     width: 150px;
     text-align: center;
     margin: 10px;
   }
 
+  /* Изображения персонажей */
   .character-image {
     width: 150px;
     height: auto;
@@ -70,6 +71,7 @@
     transition: transform 0.3s ease;
   }
 
+  /* Эффект при наведении на изображение персонажа */
   .character-image:hover {
     transform: scale(1.05);
   }
@@ -84,17 +86,19 @@
     transition: transform 0.3s ease;
   }
 
+  /* Эффект при наведении на центральное изображение */
   .center-image:hover {
     transform: scale(1.05);
   }
 
-  /* Разделы */
+  /* Раздел с контентом */
   .section {
     max-width: 900px;
     margin: 50px auto;
     padding: 0 20px;
   }
 
+  /* Заголовки разделов */
   .section h2 {
     font-family: 'Press Start 2P', cursive;
     font-size: 24px;
@@ -105,13 +109,14 @@
     letter-spacing: 1px;
   }
 
+  /* Текст внутри разделов */
   .section p {
     font-size: 16px;
     line-height: 1.6;
     margin-top: 15px;
   }
 
-  /* Изображения внутри раздела */
+  /* Картинки внутри раздела о геймплее и особенностях */
   .gameplay-image {
     display: block;
     max-width: 100%;
@@ -121,7 +126,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
 
-  /* Стиль для изображений в разделе о Deltarune */
+  /* Стиль для изображений о Deltarune */
   .deltarune-image {
     display: block;
     margin: 20px auto;
@@ -130,7 +135,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
 
-  /* Адаптивность */
+  /* Адаптивность для мобильных устройств */
   @media(max-width: 700px) {
     h1 {
       font-size: 36px;
@@ -164,7 +169,7 @@
 <div class="main-content">
   <!-- Персонажи -->
   <div class="character-block">
-    <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Deltarune_Chapter_1_Cover.png" alt="Deltarune" class="character-image"/>
+    <img src="https://avatars.mds.yandex.net/i?id=2fb6a33954372aa3c8b7951c0f70972e9605ccfb-12753090-images-thumbs&n=13" alt="Deltarune" class="character-image"/>
   </div>
 </div>
 
@@ -181,7 +186,7 @@
 
 <!-- Изображения и геймплей -->
 <h2>Особенности</h2>
-<img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Deltarune_Chapter_2_Cover.png" alt="Deltarune" class="deltarune-image"/>
+<img src="https://media1.tenor.com/m/Os_JF-GqqSEAAAAC/deltarune-deltarune-chapter-4.gif" alt="Deltarune" class="deltarune-image"/>
 <p>
   В Deltarune вы погружаетесь в мир, где выборы имеют большое значение. В боях можно использовать магию, тактику и дружелюбные диалоги. В игре много секретов, побочных квестов и забавных моментов, которые делают прохождение уникальным.
 </p>
