@@ -1,72 +1,195 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8"/>
 <title>Deltarune</title>
+<!-- Подключение шрифта Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
 <style>
   body {
-    font-family: Arial, sans-serif;
-    background-color: #d3d3d3; /* светлый фон */
     margin: 0;
-    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: #B0E0E6; /* светлый голубой фон */
+    color: #333;
+    position: relative;
   }
-  h1 {
-    color: #4b0082; /* индиго */
-    text-align: center;
-  }
-  nav {
-    text-align: center;
-    margin-top: 10px;
-  }
-  a {
+
+  /* Стиль для кнопки или ссылок */
+  .back-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(45deg, #00bfff, #1e90ff);
+    color: #fff;
+    padding: 14px 28px;
     text-decoration: none;
-    color: #8b0000;
-    margin: 0 15px;
-    font-weight: bold;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  .content {
-    max-width: 800px;
-    margin: 20px auto;
-  }
-  img {
-    display: block;
-    margin: 10px auto;
-    max-width: 100%;
-  }
-  .caption {
-    text-align: center;
-    font-style: italic;
+    font-family: 'Press Start 2P', cursive;
     font-size: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  .back-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Название */
+  h1 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    color: #FF6347; /* оранжево-красный */
+    margin-top: 60px;
+    letter-spacing: 2px;
+  }
+
+  /* Обертка для изображений и контента */
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Блок изображений */
+  .character-block {
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .character-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .character-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* Центральное изображение */
+  .center-image {
+    max-width: 600px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .center-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* Разделы */
+  .section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .section h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    color: #FF6347;
+    border-bottom: 2px solid #FF6347;
+    padding-bottom: 10px;
     margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+
+  /* Изображения внутри раздела */
+  .gameplay-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  /* Стиль для изображений в разделе о Deltarune */
+  .deltarune-image {
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 80%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  /* Адаптивность */
+  @media(max-width: 700px) {
+    h1 {
+      font-size: 36px;
+    }
+    .section h2 {
+      font-size: 20px;
+    }
+    .back-link {
+      padding: 12px 24px;
+      font-size: 12px;
+    }
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .character-block {
+      width: 80%;
+    }
   }
 </style>
 </head>
 <body>
+
+<!-- Кнопка назад к первой странице -->
+<a class="back-link" href="index.html">Назад к Undertale</a>
+
+<!-- Название -->
 <h1>Deltarune</h1>
-<div class="nav">
-  <a href="index.html">Undertale</a>
-  <a href="deltarune.html">Deltarune</a>
-</div>
-<div class="content">
-  <p>Deltarune — это приключенческая ролевая игра, созданная Тоби Фоксом. В ней вы исследуете таинственный мир, встречаете новых персонажей и раскрываете загадки вселенной.</p>
-  <h2>Особенности игры</h2>
-  <ul>
-    <li>Новые персонажи и сюжетные линии</li>
-    <li>Инновационная механика боя</li>
-    <li>Загадки и приключения</li>
-  </ul>
-  <h2>Изображения</h2>
-  <div>
-    <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Deltarune_logo.png" alt="Логотип Deltarune" />
-    <div class="caption">Логотип Deltarune</div>
-  </div>
-  <div>
-    <img src="https://upload.wikimedia.org/wikipedia/en/9/99/Deltarune_Chapter_1.png" alt="Персонажи Deltarune" />
-    <div class="caption">Персонажи Deltarune в игре</div>
+
+<!-- Основной контент -->
+<div class="main-content">
+  <!-- Персонажи -->
+  <div class="character-block">
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Deltarune_Chapter_1_Cover.png" alt="Deltarune" class="character-image"/>
   </div>
 </div>
+
+<!-- Описание -->
+<div class="section">
+  <h2>Об игре</h2>
+  <p>
+    Deltarune — это ролевая приключенческая игра, созданная Тоби Фоксом, автором Undertale. В ней игроки попадают в волшебный, загадочный мир, где сталкиваются с новыми персонажами, тайнами и приключениями. Игра использует похожий стиль пиксель-арт, атмосферу юмора и загадочности. В отличие от Undertale, Deltarune рассказывает новую историю, связанную с теми же темами дружбы, выбора и последствий.
+  </p>
+  <p>
+    В игре есть необычная система боя, интересные диалоги и множество секретов. Игроки могут исследовать разные области, взаимодействовать с персонажами и делать выборы, которые влияют на развитие сюжета. Deltarune — это продолжение вселенной Undertale, но с новыми героями и уникальной атмосферой.
+  </p>
+</div>
+
+<!-- Изображения и геймплей -->
+<h2>Особенности</h2>
+<img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Deltarune_Chapter_2_Cover.png" alt="Deltarune" class="deltarune-image"/>
+<p>
+  В Deltarune вы погружаетесь в мир, где выборы имеют большое значение. В боях можно использовать магию, тактику и дружелюбные диалоги. В игре много секретов, побочных квестов и забавных моментов, которые делают прохождение уникальным.
+</p>
+
+<h2>Графика и стиль</h2>
+<p>
+  Стиль игры — яркий пиксель-арт, сочетающий магию и юмор. Музыка и визуальные эффекты создают атмосферу волшебства и приключений. Игра подходит для всех, кто любит загадочные истории и интересный геймплей.
+</p>
+
 </body>
 </html>
