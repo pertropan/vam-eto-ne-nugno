@@ -60,58 +60,15 @@
     flex-wrap: wrap;
   }
 
-  .character-block {
-    width: 150px;
-    text-align: center;
-    margin: 10px;
-  }
-
-  .character-image {
-    width: 150px;
+  .gameplay-image {
+    display: block;
+    max-width: 100%;
     height: auto;
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
   }
-
-  .character-image:hover {
-    transform: scale(1.05);
-  }
-
-  .center-image {
-    max-width: 1000px;
-    width: 80%;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    margin: 20px;
-    transition: transform 0.3s ease;
-  }
-
-  .center-image:hover {
-    transform: scale(1.05);
-  }
-
-  .section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 20px;
-  }
-
-  .section h2 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 24px;
-    border-bottom: 2px solid #FF6347;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-  }
-
-  .section p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-top: 15px;
-  }
-
+  
   .gameplay-image {
     display: block;
     max-width: 100%;
@@ -202,7 +159,14 @@
 <div class="main-content">
   <!-- Персонажи -->
   <div class="character-block">
-    <img src="https://avatars.mds.yandex.net/i?id=2fb6a33954372aa3c8b7951c0f70972e9605ccfb-12753090-images-thumbs&n=13" alt="Deltarune" class="character-image"/>
+    <img src="https://avatars.mds.yandex.net/i?id=2fb6a33954372aa3c8b7951c0f70972e9605ccfb-12753090-images-thumbs&n=13" alt="Deltarune" class=".gameplay-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }"/>
     <img src="https://i.pinimg.com/originals/e3/16/a9/e316a9e545432c60d2c5bf226f33bc6a.gif" alt="DEltarune" class="center-image"/>
   </div>
 </div>
@@ -273,4 +237,5 @@
   <h3>Сьюзи:</h3>
   <p>Сьюзи — один из ключевых персонажей игры Deltarune, монстр-рептилия, отдалённо напоминающий динозавра. Высокая, фиолетовая, с острими жёлтыми зубами. <p>
 </div>
+
 
