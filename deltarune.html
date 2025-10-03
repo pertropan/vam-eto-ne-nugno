@@ -31,19 +31,6 @@
     z-index: 10;
   }
 
-  <a href="deltarune_chapter.html" style="
-  display: inline-block;
-  background: linear-gradient(45deg, #00bfff, #1e90ff);
-  color: #fff;
-  padding: 14px 28px;
-  text-decoration: none;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 14px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-">Перейти к главе Deltarune</a>
-  
   .back-link:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
@@ -56,7 +43,7 @@
     font-size: 48px;
     margin-top: 60px;
     letter-spacing: 2px;
-    /* Цвет теперь задается ниже для всех h1 */
+    color: #0000FF;
   }
 
   /* Общий стиль для всех h1 и h2 */
@@ -94,6 +81,7 @@
     margin-top: 15px;
   }
   
+  /* Изображения */
   .gameplay-image {
     display: block;
     max-width: 100%;
@@ -111,7 +99,9 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
 
-  .perv-glava {
+  /* Остальные изображения с одинаковым стилем */
+  .perv-glava, .vtor-glava, .tret-glava, .chet-glava,
+  .kris, .Susi1, .Susi2, .Raisel, .Noel1, .Noel2 {
     display: block;
     margin: 20px auto;
     border-radius: 15px;
@@ -119,69 +109,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
 
-  .vtor-glava {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-
-  .tret-glava {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-
-  .chet-glava {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-
-  .kris {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-
-  .Susi1 {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-
-  .Susi2 {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-
-  .Raisel {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-
-  .Noel1 {
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    max-width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
+  /* Медиа для мобильных устройств */
   @media(max-width: 700px) {
     h1 {
       font-size: 36px;
@@ -197,9 +125,26 @@
       flex-direction: column;
       align-items: center;
     }
-    .character-block {
-      width: 80%;
-    }
+  }
+
+  /* Стиль кнопки для перехода внизу страницы */
+  .bottom-button {
+    display: block;
+    margin: 40px auto;
+    padding: 14px 28px;
+    background: linear-gradient(45deg, #00bfff, #1e90ff);
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .bottom-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   }
 </style>
 </head>
@@ -215,14 +160,7 @@
 <div class="main-content">
   <!-- Персонажи -->
   <div class="character-block">
-    <img src="https://avatars.mds.yandex.net/i?id=2fb6a33954372aa3c8b7951c0f70972e9605ccfb-12753090-images-thumbs&n=13" alt="Deltarune" class=".gameplay-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }"/>
+    <img src="https://avatars.mds.yandex.net/i?id=2fb6a33954372aa3c8b7951c0f70972e9605ccfb-12753090-images-thumbs&n=13" alt="Deltarune" class="gameplay-image"/>
   </div>
 </div>
 
@@ -244,14 +182,16 @@
   <p>
     В Deltarune вы погружаетесь в мир, где выборы имеют большое значение. В боях можно использовать магию, тактику и дружелюбные диалоги. В игре много секретов, побочных квестов и забавных моментов, которые делают прохождение уникальным.
   </p>
+</div>
 
 <div class="section">
   <h2>Графика и стиль</h2>
   <p>
     Стиль игры — яркий пиксель-арт, сочетающий магию и юмор. Музыка и визуальные эффекты создают атмосферу волшебства и приключений. Игра подходит для всех, кто любит загадочные истории и интересный геймплей.
   </p>
+</div>
 
-  <div class="section">
+<div class="section">
   <h2>Главы</h2>
   
   <!-- Глава 1 -->
@@ -281,30 +221,14 @@
     Четвертая глава рассказывает о великой башне, созданной в церкви темным фонтаном — месте, охраняемом могучим бойцом-черепахой по имени Герсон. Этот герой — настоящий защитник, который спас героев от опасного титана. Внутри башни их ждут испытания, битвы и открытия, раскрывающие историю этой загадочной крепости. Герсон — мудрый и сильный, его сила и храбрость помогают преодолеть самые трудные преграды, ведь "I'm OLD".
   </p>
   <img src="https://media1.tenor.com/m/4mgjyQhP0LQAAAAC/deltarune-gerson.gif" alt="Deltarune" class="chet-glava"/>
-
-  <div class="section">
-  <h2>Герои</h2>
-
-  <h3>Крис:</h3>
-  <p>Крис — это один из главных персонажей deltarune. Крис является человеком (в данной истории монстры не убивают людей), в светлом мире это обычный мальчик, обычный типичный подросток, немного зажатый в себе, тихий и не выразительный для людей, но среди монстров он белая ворона, единственный человек, которого усыновили и приняли монстры.</p>
-  <img src="https://i.pinimg.com/originals/c9/1e/6e/c91e6ee3862a1cb6122f357559d89e09.gif" class="kris">
-
-  <h3>Сьюзи:</h3>
-  <p>Сьюзи — один из ключевых персонажей игры Deltarune, монстр-рептилия, отдалённо напоминающий динозавра. Высокая, фиолетовая, с острими жёлтыми зубами. Сначала она относилась с отстранённостью и не хотела действовать в команде.<p>
-  <img src="https://media1.tenor.com/m/o9BI8n7zx4UAAAAd/susie-deltarune-deltarune.gif" class="Susi1">
-  <p>Но в итоге она сдружилась с остальными героями и Сьюзи присоеденилась к команде.</p>
-  <img src="https://media1.tenor.com/m/EBW8x8-9QxUAAAAd/deltarune-dance-kris-dancing.gif" class="Susi2">
-
-  <h3>Ральзей:</h3>
-  <p>Ральзей — тёмный и один из игровых героев из игры Deltarune. невысокий тёмный, при первой встрече одет в синий плащ с капюшоном, который скрывает его лицо. На протяжении большей части главы 1 носит зелёную остроконечную шляпу, круглые очки зелёного цвета, розовый шарф и длинное зелёное пальто с чёрным сердцем по центру. Является поддержкой и целителем команды, может использовать магию для пощады врагов и накладывать лечащие заклинания.</p>
-  <img src="http://pa1.narvii.com/7327/79bffae80ae3d9d6ed5eb795cde266142b218124r1-720-405_hq.gif" class="Raisel">
-
-  <h3>Ноэлль(не основнорй но игровой):</h3>
-  <p>Ноэлль — светлая из Родного города и один из игровы персонажей Deltarune. у Ноэлль ярко-золотистые длинные волосы, собранные снизу в два симметричных пучка. Она носит клетчатый свитер красно-зелёного цвета с V-образным вырезом и тёмно-серыми рукавами, белую рубашку на пуговицах и тёмно-серую юбку. В тёмном мире её волосы становятся бледно-светлыми, а мех приобретает розоватый оттенок. </p>
-  <img src="https://media1.tenor.com/m/FCYBXeNBCPIAAAAC/sans-noelle.gif" class="Noel1">
-  <p>Она одноклассница Криса, его соседка и подруга детства. В первой главе играет второстепенную роль, но становится ключевым персонажем во второй, где временно присоединяется к команде в Кибергороде. Также Ноэлль значима в секции со Светлым миром в четвёртой главе, где снова присоединяется к команде на территории своего особняка. Возможно в следующих главах она будет сильнее раскрыта и даже поучаствует в пророчестве.<p>
-  <img src="https://media.tenor.com/_hkuSke6nioAAAAi/noelle-deltarune.gif" class="Noel2">
 </div>
+
+<!-- Кнопка, ведущая на страницу deltarune_chapter.html, размещена внизу -->
+<button class="bottom-button" onclick="window.location.href='deltarune_chapter.html'">Перейти к главе</button>
+
+</body>
+</html>
+
 
 
 
