@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<title>Персонажи Deltarune</title>
+<!-- Подключение шрифта Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #B0E0E6; /* светлый голубой фон */
+    color: #333;
+    position: relative;
+  }
+
+  /* Кнопка назад */
+  .back-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(45deg, #00bfff, #1e90ff);
+    color: #fff;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  .back-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Заголовок */
+  h1 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    margin-top: 60px;
+    letter-spacing: 2px;
+    color: #0000FF;
+  }
+
+  /* Основной контейнер */
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+
+  /* Карточки персонажей */
+  .character-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin: 20px;
+    max-width: 300px;
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+
+  .character-card:hover {
+    transform: scale(1.05);
+  }
+
+  .character-card img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .character-name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: #0000FF;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .character-description {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  /* Мобильная адаптация */
+  @media(max-width: 700px) {
+    h1 {
+      font-size: 36px;
+    }
+    .back-link {
+      padding: 12px 24px;
+      font-size: 12px;
+    }
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .character-card {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Кнопка назад -->
+<a class="back-link" href="deltarune.html">Обратно к Deltarune</a>
+
+<!-- Заголовок -->
+<h1>Персонажи Deltarune</h1>
+
+<!-- Контент с персонажами -->
+<div class="main-content">
+  <!-- Крис -->
+  <div class="character-card">
+    <img src="https://i.pinimg.com/originals/c9/1e/6e/c91e6ee3862a1cb6122f357559d89e09.gif" alt="Крис"/>
+    <div class="character-name">Крис</div>
+    <div class="character-description">
+      Крис — это один из главных персонажей Deltarune. Он человек (в этой истории монстры не убивают людей), тихий и немного зажатый подросток, который становится частью приключений.
+    </div>
+  </div>
+  
+  <!-- Сьюзи -->
+  <div class="character-card">
+    <img src="https://media1.tenor.com/m/o9BI8n7zx4UAAAAd/susie-deltarune-deltarune.gif" alt="Сьюзи"/>
+    <div class="character-name">Сьюзи</div>
+    <div class="character-description">
+      Сьюзи — монстр-рептилия, сначала отстранённая, но позже присоединяющаяся к команде. Высокая, фиолетовая, с острыми зубами.
+    </div>
+  </div>
+  
+  <!-- Ральзей -->
+  <div class="character-card">
+    <img src="http://pa1.narvii.com/7327/79bffae80ae3d9d6ed5eb795cde266142b218124r1-720-405_hq.gif" alt="Ральзей"/>
+    <div class="character-name">Ральзей</div>
+    <div class="character-description">
+      Тёмный герой, носит синий плащ, шляпу и очки. Целитель и маг поддержки, помогает команде в битвах.
+    </div>
+  </div>
+  
+  <!-- Ноэлль -->
+  <div class="character-card">
+    <img src="https://media1.tenor.com/m/FCYBXeNBCPIAAAAC/sans-noelle.gif" alt="Ноэлль"/>
+    <div class="character-name">Ноэлль</div>
+    <div class="character-description">
+      Светлая героиня, с ярко-золотистыми волосами и милым характером. В игре появляется в разных главах.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
