@@ -62,7 +62,6 @@
     margin: 20px;
     max-width: 300px;
     padding: 20px;
-    transition: transform 0.3s;
   }
 
   .character-card:hover {
@@ -90,7 +89,24 @@
     text-align: justify;
   }
 
-  /* Мобильная адаптация */
+  /* Стиль для кнопки раскрытия */
+  .toggle-btn {
+    background-color: #00bfff;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    transition: background-color 0.3s;
+  }
+
+  .toggle-btn:hover {
+    background-color: #1e90ff;
+  }
+
+  /* Адаптация для мобильных устройств */
   @media(max-width: 700px) {
     h1 {
       font-size: 36px;
@@ -119,15 +135,31 @@
 
 <!-- Контент с персонажами -->
 <div class="main-content">
-  <!-- Крис -->
+
+  <!-- Пример карточки персонажа с вкладками -->
   <div class="character-card">
     <img src="https://i.pinimg.com/originals/c9/1e/6e/c91e6ee3862a1cb6122f357559d89e09.gif" alt="Крис"/>
     <div class="character-name">Крис</div>
     <div class="character-description">
       Крис — это один из главных персонажей Deltarune. Он человек (в этой истории монстры не убивают людей), тихий и немного зажатый подросток, который становится частью приключений.
     </div>
+
+    <!-- Вкладка с деталями -->
+    <div class="character-details">
+      <button class="toggle-btn">Подробнее</button>
+      <div class="info-content" style="display: none;">
+        <h3>Внешний вид</h3>
+        <p><!-- Ваша информация о внешнем виде --></p>
+        <h3>Предыстория</h3>
+        <p><!-- Ваша предыстория --></p>
+        <h3>Музыкальная тема</h3>
+        <p><!-- Ваша музыкальная тема --></p>
+      </div>
+    </div>
   </div>
-  
+
+  <!-- Аналогичные карточки для других персонажей, вставьте сюда -->
+
   <!-- Сьюзи -->
   <div class="character-card">
     <img src="https://media1.tenor.com/m/o9BI8n7zx4UAAAAd/susie-deltarune-deltarune.gif" alt="Сьюзи"/>
@@ -135,8 +167,20 @@
     <div class="character-description">
       Сьюзи — монстр-рептилия, сначала отстранённая, но позже присоединяющаяся к команде. Высокая, фиолетовая, с острыми зубами.
     </div>
+
+    <div class="character-details">
+      <button class="toggle-btn">Подробнее</button>
+      <div class="info-content" style="display: none;">
+        <h3>Внешний вид</h3>
+        <p><!-- Ваша информация о внешнем виде --></p>
+        <h3>Предыстория</h3>
+        <p><!-- Ваша предыстория --></p>
+        <h3>Музыкальная тема</h3>
+        <p><!-- Ваша музыкальная тема --></p>
+      </div>
+    </div>
   </div>
-  
+
   <!-- Ральзей -->
   <div class="character-card">
     <img src="https://media1.tenor.com/m/VlZfQKcyWicAAAAC/ralsei-ralsei-deltarune.gif" alt="Ральзей"/>
@@ -144,14 +188,38 @@
     <div class="character-description">
       Тёмный герой, носит синий плащ, шляпу и очки. Целитель и маг поддержки, помогает команде в битвах.
     </div>
+
+    <div class="character-details">
+      <button class="toggle-btn">Подробнее</button>
+      <div class="info-content" style="display: none;">
+        <h3>Внешний вид</h3>
+        <p><!-- Ваша информация о внешнем виде --></p>
+        <h3>Предыстория</h3>
+        <p><!-- Ваша предыстория --></p>
+        <h3>Музыкальная тема</h3>
+        <p><!-- Ваша музыкальная тема --></p>
+      </div>
+    </div>
   </div>
-  
+
   <!-- Ноэлль -->
   <div class="character-card">
     <img src="https://media.tenor.com/_hkuSke6nioAAAAi/noelle-deltarune.gif" alt="Ноэлль"/>
     <div class="character-name">Ноэлль</div>
     <div class="character-description">
       Светлая героиня, с ярко-золотистыми волосами и милым характером. В игре появляется в разных главах.
+    </div>
+
+    <div class="character-details">
+      <button class="toggle-btn">Подробнее</button>
+      <div class="info-content" style="display: none;">
+        <h3>Внешний вид</h3>
+        <p><!-- Ваша информация о внешнем виде --></p>
+        <h3>Предыстория</h3>
+        <p><!-- Ваша предыстория --></p>
+        <h3>Музыкальная тема</h3>
+        <p><!-- Ваша музыкальная тема --></p>
+      </div>
     </div>
   </div>
 
@@ -162,26 +230,77 @@
     <div class="character-description">
       персонаж игры Deltarune, главный антагонист и предпоследний босс третьей главы. Тенна — живой телевизор, одержимый идеей быть в центре внимания. Он регулярно появляется на протяжении главы, затягивая героев в игровые шоу.
     </div>
+
+    <div class="character-details">
+      <button class="toggle-btn">Подробнее</button>
+      <div class="info-content" style="display: none;">
+        <h3>Внешний вид</h3>
+        <p><!-- Ваша информация о внешнем виде --></p>
+        <h3>Предыстория</h3>
+        <p><!-- Ваша предыстория --></p>
+        <h3>Музыкальная тема</h3>
+        <p><!-- Ваша музыкальная тема --></p>
+      </div>
+    </div>
   </div>
 
   <!-- Спантон -->
   <div class="character-card">
-    <img src="https://pa1.aminoapps.com/8113/14a7a7430d4b89cc8425770846d204161946b7ffr1-640-394_hq.gif" alt="Тенна"/>
+    <img src="https://pa1.aminoapps.com/8113/14a7a7430d4b89cc8425770846d204161946b7ffr1-640-394_hq.gif" alt="Спантон"/>
     <div class="character-name">Спантон (секретный бос 2 главы)</div>
     <div class="character-description">
-      Спамтон в игре Deltarune — тёмный из Кибермира. Выглядит как миниатюрная кукла с большой головой и короткими конечностями. У Спамтона чёрные волосы, зачёсанные назад, удлинённый нос, красный румянец и белая кожа. Он носит очки с чёрной оправой и цветными линзами, которые могут меняться цветами. Спамтон обладает способностью увеличивать размер своей головы
+      Спамтон в игре Deltarune — тёмный из Кибермира. Выглядит как миниатюрная кукла с большой головой и короткими конечностями. У Спамтона чёрные волосы, зачёсанные назад, удлинённый нос, красный румянец и белая кожа. Он носит очки с чёрной оправой и цветными линзами, которые могут меняться цветами. Спамтон обладает способностью увеличивать размер своей головы.
+    </div>
+
+    <div class="character-details">
+      <button class="toggle-btn">Подробнее</button>
+      <div class="info-content" style="display: none;">
+        <h3>Внешний вид</h3>
+        <p><!-- Ваша информация о внешнем виде --></p>
+        <h3>Предыстория</h3>
+        <p><!-- Ваша предыстория --></p>
+        <h3>Музыкальная тема</h3>
+        <p><!-- Ваша музыкальная тема --></p>
+      </div>
     </div>
   </div>
 
   <!-- Герсон -->
   <div class="character-card">
-  <img src="https://deltarune.wiki/images/Hammer_of_Justice_battle_idle.gif?cb=5oc7df" alt="Тенна"/>
+    <img src="https://deltarune.wiki/images/Hammer_of_Justice_battle_idle.gif?cb=5oc7df" alt="Герсон"/>
     <div class="character-name">Герсон (секретный бос 2 главы)</div>
     <div class="character-description">
-      В четвёртой главе Герсон появляется в тёмных святилищах: покрытый его прахом молот стал его тёмной реинкарнацией. В этом облике он известен просто как старик, которого встречают Крис, Ральзей и Сьюзи, и который становится наставником для последней. 
+      В четвёртой главе Герсон появляется в тёмных святилищах: покрытый его прахом молот стал его тёмной реинкарнацией. В этом облике он известен просто как старик, которого встречают Крис, Ральзей и Сьюзи, и который становится наставником для последней.
+    </div>
+
+    <div class="character-details">
+      <button class="toggle-btn">Подробнее</button>
+      <div class="info-content" style="display: none;">
+        <h3>Внешний вид</h3>
+        <p><!-- Ваша информация о внешнем виде --></p>
+        <h3>Предыстория</h3>
+        <p><!-- Ваша предыстория --></p>
+        <h3>Музыкальная тема</h3>
+        <p><!-- Ваша музыкальная тема --></p>
+      </div>
     </div>
   </div>
+
 </div>
+
+<!-- Скрипт для работы вкладок -->
+<script>
+  document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      if (content.style.display === 'none' || !content.style.display) {
+        content.style.display = 'block';
+      } else {
+        content.style.display = 'none';
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
