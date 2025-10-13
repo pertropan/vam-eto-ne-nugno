@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Пример страницы</title>
+<!-- Подключение шрифта Press Start 2P из Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+  }
+  /* Кнопка в правом верхнем углу, просто */
+  .top-right-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+  }
+
+  /* Кнопка в стиле deltarune, слева сверху */
+  .deltarune-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(45deg, #ff8c00, #ffa500);
+    color: #fff;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  /* Стиль для текста по центру */
+  .center-text {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+</style>
+</head>
+<body>
+
+<!-- Кнопка справа вверху без функционала -->
+<button class="top-right-btn">Кнопка</button>
+
+<!-- Кнопка слева вверху в стиле .deltarune -->
+<a href="#" class="deltarune-btn">Кнопка</a>
+
+<!-- Центральный текст с объяснением -->
+<div class="center-text">
+  <h2>Как сделать такую кнопку</h2>
+  <p>Чтобы создать кнопку в стиле <em>.deltarune</em>, используйте HTML-элемент <code>&lt;a&gt;</code> или <code>&lt;button&gt;</code> с классом, содержащим стили из CSS. В качестве фона используйте градиент, добавьте шрифт <strong>Press Start 2P</strong>, скруглите углы и добавьте тень.</p>
+</div>
+
+</body>
+</html>
