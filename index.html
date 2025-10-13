@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8"/>
 <title>Undertale</title>
-<!-- Подключение шрифта Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
 <style>
   body {
@@ -14,7 +13,6 @@
     position: relative;
   }
 
-  /* Стиль для кнопки */
   .deltarune {
     position: fixed;
     top: 20px;
@@ -36,7 +34,6 @@
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   }
 
-  /* Название */
   h1 {
     text-align: center;
     font-family: 'Press Start 2P', cursive;
@@ -46,7 +43,6 @@
     letter-spacing: 2px;
   }
 
-  /* Обертка для изображений и контента */
   .main-content {
     display: flex;
     justify-content: center;
@@ -55,7 +51,6 @@
     flex-wrap: wrap;
   }
 
-  /* Блок символов слева и справа */
   .character-block {
     width: 150px;
     text-align: center;
@@ -74,7 +69,6 @@
     transform: scale(1.05);
   }
 
-  /* Центральное изображение */
   .center-image {
     max-width: 600px;
     width: 80%;
@@ -88,7 +82,6 @@
     transform: scale(1.05);
   }
 
-  /* Разделы */
   .section {
     max-width: 900px;
     margin: 50px auto;
@@ -111,7 +104,6 @@
     margin-top: 15px;
   }
 
-  /* Стиль для картинки по ссылке */
   .gameplay-image {
     display: block;
     max-width: 100%;
@@ -121,7 +113,6 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
 
-  /* Стиль для картинки в разделе Пацифист */
   .pacifist-image {
     display: block;
     margin: 20px auto; /* по центру горизонтально */
@@ -132,20 +123,19 @@
 
   .genocid-image {
   display: block;
-  margin: 20px auto; /* авто-отступ слева и справа, чтобы по центру */
-  border-radius: 15px; /* скругление краёв */
-  max-width: 120%; /* чтобы изображение не было слишком широким на больших экранах */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* немного тени для объема */
+  margin: 20px auto; 
+  border-radius: 15px; 
+  max-width: 120%; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
 }
   .neitral-image {
   display: block;
-  margin: 20px auto; /* авто-отступ слева и справа, чтобы по центру */
-  border-radius: 15px; /* скругление краёв */
-  max-width: 80%; /* чтобы изображение не было слишком широким на больших экранах */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* немного тени для объема */
+  margin: 20px auto; 
+  border-radius: 15px; 
+  max-width: 80%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-  /* Адаптивность для мобильных устройств */
   @media(max-width: 700px) {
     h1 {
       font-size: 36px;
@@ -169,27 +159,22 @@
 </head>
 <body>
 
-<!-- Кнопка в правом верхнем углу -->
 <a class="deltarune" href="deltarune.html">Перейти к Deltarune</a>
 
-<!-- Название -->
 <h1>Undertale</h1>
 
-<!-- Основной контент: изображение и описание -->
 <div class="main-content">
   <!-- Левые персонажи -->
   <div class="character-block">
     <img src="https://avatars.mds.yandex.net/i?id=f2f4ea4edfac0e1f666055d08636f3a9e27b8427-4577649-images-thumbs&n=13" alt="Undertale" class="character-image"/>
   </div>
-  <!-- Центральное изображение -->
   <img src="https://avatars.mds.yandex.net/i?id=f54170bd4031e5369e8ab831015c27d622181fff-4600825-images-thumbs&n=13" alt="Undertale" class="center-image"/>
-  <!-- Правые персонажи -->
   <div class="character-block">
     <img src="https://avatars.mds.yandex.net/i?id=8aa38a66bd1297a708d8a836e86bdee03357619d-10100796-images-thumbs&n=13" alt="Undertale" class="character-image"/>
   </div>
 </div>
 
-<!-- Раздел с расширенным описанием -->
+
 <div class="section">
   <h2>Описание</h2>
   <p>
@@ -200,17 +185,15 @@
   </p>
 </div>
 
-<!-- Раздел с геймплеем -->
+
 <div class="section">
   <h2>Геймплей</h2>
   <p>
     Undertale сочетает элементы классической RPG с инновационной системой боя. В боях игрок может выбрать «сделать шаг назад» и пообщаться с врагом, используя диалоги и действия, чтобы избегать конфликта или даже дружелюбно взаимодействовать. В отличие от большинства игр, здесь можно пройти игру, избегая убийств, что влияет на развитие сюжета и финальную концовку. В игре присутствуют мини-игры, головоломки и квесты, а также возможность исследовать разные области, собирая предметы и взаимодействуя с персонажами.
   </p>
-  <!-- Вставляем картинку по ссылке -->
   <img src="https://lparchive.org/Undertale/Update%2028/89-2518.gif" alt="Геймплей" class="gameplay-image"/>
 </div>
 
-<!-- Раздел с концовками -->
 <div class="section">
   <h2>Концовки</h2>
   <p>
@@ -238,5 +221,6 @@
   
 </body>
 </html>
+
 
 
