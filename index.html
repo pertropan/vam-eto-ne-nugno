@@ -8,11 +8,10 @@
   body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: #FFE5B4; /* слабый оранжевый фон */
+    background: #FFE5B4;
     color: #333;
     position: relative;
   }
-
   .deltarune {
     position: fixed;
     top: 20px;
@@ -28,21 +27,18 @@
     transition: all 0.3s ease;
     z-index: 10;
   }
-
   .deltarune:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
   }
-
   h1 {
     text-align: center;
     font-family: 'Press Start 2P', cursive;
     font-size: 48px;
-    color: #FF7F50; /* светло-оранжевый цвет */
+    color: #FF7F50;
     margin-top: 60px;
     letter-spacing: 2px;
   }
-
   .main-content {
     display: flex;
     justify-content: center;
@@ -50,13 +46,11 @@
     padding: 50px 20px;
     flex-wrap: wrap;
   }
-
   .character-block {
     width: 150px;
     text-align: center;
     margin: 10px;
   }
-
   .character-image {
     width: 150px;
     height: auto;
@@ -64,11 +58,9 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
   }
-
   .character-image:hover {
     transform: scale(1.05);
   }
-
   .center-image {
     max-width: 600px;
     width: 80%;
@@ -77,17 +69,14 @@
     margin: 20px;
     transition: transform 0.3s ease;
   }
-
   .center-image:hover {
     transform: scale(1.05);
   }
-
   .section {
     max-width: 900px;
     margin: 50px auto;
     padding: 0 20px;
   }
-
   .section h2 {
     font-family: 'Press Start 2P', cursive;
     font-size: 24px;
@@ -97,13 +86,11 @@
     margin-bottom: 20px;
     letter-spacing: 1px;
   }
-
   .section p {
     font-size: 16px;
     line-height: 1.6;
     margin-top: 15px;
   }
-
   .gameplay-image {
     display: block;
     max-width: 100%;
@@ -112,30 +99,33 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
-
-  .pacifist-image {
+  .pacifist-image, .genocid-image, .neitral-image {
     display: block;
-    margin: 20px auto; /* по центру горизонтально */
-    border-radius: 15px; /* скругление краёв */
-    max-width: 80%; /* чтобы не было слишком широким */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* тень */
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 80%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
-
-  .genocid-image {
-  display: block;
-  margin: 20px auto; 
-  border-radius: 15px; 
-  max-width: 120%; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
-}
-  .neitral-image {
-  display: block;
-  margin: 20px auto; 
-  border-radius: 15px; 
-  max-width: 80%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
+  .bottom-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 28px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+  .bottom-button:hover {
+    background-color: #45a049;
+  }
   @media(max-width: 700px) {
     h1 {
       font-size: 36px;
@@ -158,13 +148,9 @@
 </style>
 </head>
 <body>
-
 <a class="deltarune" href="deltarune.html">Перейти к Deltarune</a>
-
 <h1>Undertale</h1>
-
 <div class="main-content">
-  <!-- Левые персонажи -->
   <div class="character-block">
     <img src="https://avatars.mds.yandex.net/i?id=f2f4ea4edfac0e1f666055d08636f3a9e27b8427-4577649-images-thumbs&n=13" alt="Undertale" class="character-image"/>
   </div>
@@ -173,8 +159,6 @@
     <img src="https://avatars.mds.yandex.net/i?id=8aa38a66bd1297a708d8a836e86bdee03357619d-10100796-images-thumbs&n=13" alt="Undertale" class="character-image"/>
   </div>
 </div>
-
-
 <div class="section">
   <h2>Описание</h2>
   <p>
@@ -184,8 +168,6 @@
     В игре есть множество вариантов прохождения, от мирного сосуществования с монстрами до битв и конфронтаций. Каждое ваше решение влияет на финал, делая каждое прохождение уникальным. Атмосфера, юмор и запоминающиеся сцены делают Undertale культовой игрой, которая оставляет след в сердце каждого игрока. Погрузитесь в удивительный мир, полон приключений, загадок и дружбы!
   </p>
 </div>
-
-
 <div class="section">
   <h2>Геймплей</h2>
   <p>
@@ -193,7 +175,6 @@
   </p>
   <img src="https://lparchive.org/Undertale/Update%2028/89-2518.gif" alt="Геймплей" class="gameplay-image"/>
 </div>
-
 <div class="section">
   <h2>Концовки</h2>
   <p>
@@ -215,10 +196,7 @@
   </p>
   <img src="https://pa1.aminoapps.com/7542/a9af7c7eef85f7d4cf7366bf0fddaa9a5cb0d018r1-540-255_hq.gif" alt="Нейтрал" class="neitral-image"/>
 </div>
-
 <button class="bottom-button" onclick="window.location.href='AI_what_I_do.html'">Что я делал с Иишкой</button>
-
-  
 </body>
 </html>
 
