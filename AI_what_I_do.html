@@ -17,7 +17,8 @@
     justify-content: center;
     background-color: #f0f0f0;
   }
-  /* Кнопка в правом верхнем углу, просто */
+
+  /* Оригинальные стили кнопок */
   .top-right-btn {
     position: fixed;
     top: 20px;
@@ -25,7 +26,6 @@
     padding: 10px 20px;
   }
 
-  /* Кнопка в стиле deltarune, слева сверху */
   .deltarune-btn {
     position: fixed;
     top: 20px;
@@ -38,6 +38,24 @@
     font-size: 14px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  /* Новая кнопка "Назад к Undertale" по центру сверху в стиле левой крутой */
+  .back-center-btn {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 28px;
+    background: linear-gradient(45deg, #8a2be2, #da70d6); /* стиль в стиле левой крутой */
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
   }
@@ -74,12 +92,11 @@
 </head>
 <body>
 
-<a class="back-link" href="index.html">Назад к Undertale</a>
+<!-- Новая "кнопка" по центру сверху -->
+<a href="index.html" class="back-center-btn">Назад к Undertale</a>
 
-<!-- Кнопка справа вверху без функционала -->
+<!-- Оригинальные кнопки -->
 <button class="top-right-btn">Кнопка</button>
-
-<!-- Кнопка слева вверху в стиле .deltarune -->
 <a href="#" class="deltarune-btn">Кнопка</a>
 
 <!-- Центральный текст с объяснением -->
